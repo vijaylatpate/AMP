@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AMP2022">
         <activity
+            android:name=".Practical_3_3"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_3_2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_3_1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_3"
+            android:exported="false" />
+        <activity
             android:name=".HomeScreen"
             android:exported="false" />
         <activity
