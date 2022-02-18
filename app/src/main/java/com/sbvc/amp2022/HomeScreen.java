@@ -22,6 +22,14 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
         //Dialog Box Initialization
         builder = new AlertDialog.Builder(this);
 
+        btnPractical1 = findViewById(R.id.btnPractical_1);
+        btnPractical2 = findViewById(R.id.btnPractical_2);
+        btnPractical3 = findViewById(R.id.btnPractical_3);
+
+        btnPractical1.setOnClickListener(this);
+        btnPractical2.setOnClickListener(this);
+        btnPractical3.setOnClickListener(this);
+
     }
 
     @Override

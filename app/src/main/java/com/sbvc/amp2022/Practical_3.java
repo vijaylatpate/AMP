@@ -19,6 +19,10 @@ public class Practical_3 extends AppCompatActivity implements View.OnClickListen
         btnPractical3_1 = findViewById(R.id.btnPractical_3_1);
         btnPractical3_2 = findViewById(R.id.btnPractical_3_2);
         btnPractical3_3 = findViewById(R.id.btnPractical_3_3);
+
+        btnPractical3_1.setOnClickListener(this);
+        btnPractical3_2.setOnClickListener(this);
+        btnPractical3_3.setOnClickListener(this);
     }
 
     @Override

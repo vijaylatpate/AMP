@@ -14,6 +14,13 @@
         android:text="Layout Start"
         android:textSize="10dp"/>
 
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Parent Right"
+        android:textSize="10dp"/>
+
 
     <Button
         android:layout_centerInParent="true"
