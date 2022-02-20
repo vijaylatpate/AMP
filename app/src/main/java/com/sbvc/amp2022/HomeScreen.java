@@ -25,11 +25,12 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
         btnPractical1 = findViewById(R.id.btnPractical_1);
         btnPractical2 = findViewById(R.id.btnPractical_2);
         btnPractical3 = findViewById(R.id.btnPractical_3);
+        btnPractical4 = findViewById(R.id.btnPractical_4);
 
         btnPractical1.setOnClickListener(this);
         btnPractical2.setOnClickListener(this);
         btnPractical3.setOnClickListener(this);
-
+        btnPractical4.setOnClickListener(this);
     }
 
     @Override
@@ -67,7 +68,9 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
             case R.id.btnPractical_3:
                 startActivity(new Intent(getApplicationContext(), Practical_3.class));
                 break;
-
+            case R.id.btnPractical_4:
+                startActivity(new Intent(getApplicationContext(), Practical_4.class));
+                break;
         }
     }
 }

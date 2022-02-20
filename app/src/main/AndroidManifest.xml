@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AMP2022">
         <activity
+            android:name=".Practical_4_3"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_4_2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_4_1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_4"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_3_6_1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_3_6"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_3_5"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_3_4"
+            android:exported="false" />
+        <activity
             android:name=".Practical_3_3"
             android:exported="false" />
         <activity
