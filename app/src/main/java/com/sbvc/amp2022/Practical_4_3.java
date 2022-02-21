@@ -3,6 +3,7 @@ package com.sbvc.amp2022;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +14,7 @@ import net.objecthunter.exp4j.ExpressionBuilder;
 
 public class Practical_4_3 extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDec, btnAdd, btnSubtract, btnMultiply, btnDivide, btnEqualTo;
+    Button btn20, btnCancel, btnBackSpace, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0, btnDec, btnAdd, btnSubtract, btnMultiply, btnDivide, btnEqualTo;
     EditText txtInput;
     String txtIP = "";
     int counter = 0;
@@ -40,6 +41,14 @@ public class Practical_4_3 extends AppCompatActivity implements View.OnClickList
         btnDivide = findViewById(R.id.btnDivide);
         btnMultiply = findViewById(R.id.btnMultiplication);
         btnEqualTo = findViewById(R.id.btnEqual);
+
+        btn20 = findViewById(R.id.btnDoubleZero);
+        btnCancel = findViewById(R.id.btnCancel);
+        btnBackSpace = findViewById(R.id.btnBackSpace);
+
+        btn20.setOnClickListener(this);
+        btnCancel.setOnClickListener(this);
+        btnBackSpace.setOnClickListener(this);
 
         btn0.setOnClickListener(this);
         btn1.setOnClickListener(this);
@@ -122,7 +131,22 @@ public class Practical_4_3 extends AppCompatActivity implements View.OnClickList
                 counter = 0;
                 txtInput.setText(txtInput.getText() + "/");
                 break;
+            case R.id.btnDoubleZero:
+                counter = 0;
+                txtInput.setText(txtInput.getText() + "00");
+                break;
 
+            case R.id.btnCancel:
+                counter = 0;
+                txtInput.setText("");
+                break;
+
+            case R.id.btnBackSpace:
+                if (!TextUtils.isEmpty(txtInput.getText())) {
+                    counter = 0;
+                    txtInput.setText(txtInput.getText().toString().substring(0, txtInput.getText().toString().length() - 1));
+                }
+                break;
         }
     }
 }

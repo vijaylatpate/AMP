@@ -18,6 +18,7 @@
             android:clickable="false"
             android:cursorVisible="true"
             android:editable="false"
+            android:longClickable="false"
             android:textSize="40dp" />
 
         <LinearLayout
@@ -157,6 +158,30 @@
                 android:layout_height="80dp"
                 android:layout_margin="10dp"
                 android:text="+"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/btnDoubleZero"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:text="00"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:text="C"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/btnBackSpace"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@android:drawable/ic_delete"
                 android:textSize="40dp" />
         </GridLayout>
 
