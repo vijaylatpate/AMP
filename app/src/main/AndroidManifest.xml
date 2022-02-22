@@ -9,6 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AMP2022">
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".Practical_5_1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_5"
+            android:exported="false" />
         <activity
             android:name=".Practical_4_3"
             android:exported="false" />
