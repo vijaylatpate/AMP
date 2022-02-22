@@ -23,5 +23,13 @@ public class Practical_5 extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), Practical_5_1.class));
             }
         });
+
+        btnPractical5_2 = findViewById(R.id.btnPractical_5_2);
+        btnPractical5_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Practical_5_2.class));
+            }
+        });
     }
 }
