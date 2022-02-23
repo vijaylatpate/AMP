@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class HomeScreen extends AppCompatActivity implements View.OnClickListener {
     AlertDialog.Builder builder;
 
-    Button btnPractical1, btnPractical2, btnPractical3, btnPractical4, btnPractical5;
+    Button btnPractical1, btnPractical2, btnPractical3, btnPractical4, btnPractical5, btnPractical6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +28,14 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
         btnPractical4 = findViewById(R.id.btnPractical_4);
         btnPractical5 = findViewById(R.id.btnPractical_5);
 
+        btnPractical6 = findViewById(R.id.btnPractical_6);
+
         btnPractical1.setOnClickListener(this);
         btnPractical2.setOnClickListener(this);
         btnPractical3.setOnClickListener(this);
         btnPractical4.setOnClickListener(this);
         btnPractical5.setOnClickListener(this);
+        btnPractical6.setOnClickListener(this);
     }
 
     @Override
@@ -75,6 +78,9 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
                 break;
             case R.id.btnPractical_5:
                 startActivity(new Intent(getApplicationContext(), Practical_5.class));
+                break;
+            case R.id.btnPractical_6:
+                startActivity(new Intent(getApplicationContext(), Practical_6.class));
                 break;
         }
     }
