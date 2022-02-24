@@ -63,6 +63,14 @@
                 android:layout_margin="10dp"
                 android:background="@color/colorAccent"
                 android:text="Practical 6" />
+
+            <Button
+                android:id="@+id/btnPractical_7"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorAccent"
+                android:text="Practical 7" />
         </LinearLayout>
     </ScrollView>
 
