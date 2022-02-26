@@ -19,6 +19,7 @@ public class Practical_7_1 extends AppCompatActivity {
     ListView lstEmployee;
     MyDBHelper myDBHelper;
     List<Employee> employeeList = new ArrayList<Employee>();
+    MyAdapter myAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,13 @@ public class Practical_7_1 extends AppCompatActivity {
         myDBHelper = new MyDBHelper(getApplicationContext());
 
         employeeList = myDBHelper.getAllEmployees();
+
+        for (Employee e : employeeList
+        ) {
+            Toast.makeText(this, "Name : " + e.getSName(), Toast.LENGTH_SHORT).show();
+        }
+        myAdapter = new MyAdapter(getApplicationContext(), employeeList);
+        lstEmployee.setAdapter(myAdapter);
 
         btnAddEmployee.setOnClickListener(new View.OnClickListener() {
             @Override
