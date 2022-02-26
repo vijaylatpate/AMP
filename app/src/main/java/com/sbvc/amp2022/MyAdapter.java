@@ -39,9 +39,8 @@ public class MyAdapter extends ArrayAdapter<Employee> {
         TextView txtID = view.findViewById(R.id.txtEmpID);
         TextView txtName = view.findViewById(R.id.txtEmpName);
 
-        txtID.setText(employee.getId());
-        //txtID.setText(employees.get(0).getId());
-        //txtName.setText("");
+        txtID.setText(employee.getnId()+"");
+        txtName.setText(employee.sname);
 
         return view;
     }

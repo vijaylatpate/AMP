@@ -33,13 +33,9 @@ public class Practical_7_1 extends AppCompatActivity {
 
         employeeList = myDBHelper.getAllEmployees();
 
-        for (Employee e : employeeList
-        ) {
-            Toast.makeText(this, "Name : " + e.getSName(), Toast.LENGTH_SHORT).show();
-        }
         myAdapter = new MyAdapter(getApplicationContext(), employeeList);
         lstEmployee.setAdapter(myAdapter);
-
+        myAdapter.notifyDataSetChanged();
         btnAddEmployee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

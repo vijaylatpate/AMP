@@ -17,7 +17,7 @@ public class Employee {
         this.sname = sname;
     }
 
-    public int getId() {
+    public int getnId() {
         return id;
     }
 
