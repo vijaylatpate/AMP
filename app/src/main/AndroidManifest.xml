@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AMP2022">
         <activity
+            android:name=".Practical_7_2"
+            android:exported="false" />
+        <activity
             android:name=".Practical_7_1_2"
             android:exported="false" />
         <activity

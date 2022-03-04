@@ -26,5 +26,12 @@ public class Practical_7 extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), Practical_7_1.class));
             }
         });
+
+        btnPractical_7_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Practical_7_2.class));
+            }
+        });
     }
 }

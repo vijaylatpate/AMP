@@ -20,6 +20,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
     private static final String id = "id";
     private static final String sname = "sname";
     private SQLiteDatabase db;
+    Employee employee;
     String query = "CREATE Table " + Database_Table + "(" + id + " INTEGER PRIMARY KEY AUTOINCREMENT," + sname + " TEXT NOT NULL)";
 
     String query1 = "";
@@ -68,5 +69,48 @@ public class MyDBHelper extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
         return employees;
+    }
+
+    public Employee getEmployee(int id) {
+        employee = new Employee();
+        query1 = "SELECT * from " + Database_Table + " Where id=" + id;
+        db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(query1, null);
+        if (cursor.moveToFirst()) {
+            do {
+                employee.setId(cursor.getInt(0));
+                employee.setSName(cursor.getString(1));
+            } while (cursor.moveToNext());
+        }
+        return employee;
+    }
+
+    public boolean EditEmployee(Employee employee) {
+        db = this.getWritableDatabase();
+        try {
+            ContentValues contentValues = new ContentValues();
+            contentValues.put("id", employee.getnId());
+            contentValues.put("sname", employee.getSName());
+            db.update(Database_Table, contentValues, "id=?", new String[]{String.valueOf(employee.getnId())});
+            return true;
+        } catch (Exception ex) {
+            Log.d("SBVC_Database", ex.getMessage().toString());
+            return false;
+        } finally {
+            db.close();
+        }
+    }
+
+    public boolean DeleteEmployee(int id) {
+        db = this.getWritableDatabase();
+        try {
+            db.delete(Database_Table, "id=?", new String[]{String.valueOf(employee.getnId())});
+            return true;
+        } catch (Exception ex) {
+            Log.d("SBVC_Database", ex.getMessage().toString());
+            return false;
+        } finally {
+            db.close();
+        }
     }
 }
