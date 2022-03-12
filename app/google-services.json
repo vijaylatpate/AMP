@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "837556907069",
+    "project_id": "amp-2022",
+    "storage_bucket": "amp-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837556907069:android:77697fd750b5b67907ce54",
+        "android_client_info": {
+          "package_name": "com.sbvc.amp2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837556907069-j8j2te4cktvt6mr9krclf1eve5pijlsq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzjNkRzPVnz2kST1Go2xP4nTTYf4l8acE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837556907069-j8j2te4cktvt6mr9krclf1eve5pijlsq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

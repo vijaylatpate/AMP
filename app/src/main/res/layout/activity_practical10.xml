@@ -5,37 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Practical_9">
+    tools:context=".Practical_10">
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:hint="Enter Username Here" />
+
+    <EditText
+        android:id="@+id/txtUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:hint="Enter Password Here"
+        android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/practical9_1"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="10dp"
         android:background="@color/colorAccent"
-        android:text="Practical 9.1" />
+        android:text="Login"
+        android:textSize="25dp" />
 
-    <Button
-        android:id="@+id/practical9_2"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_margin="10dp"
-        android:background="@color/colorAccent"
-        android:text="Practical 9.2" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/practical9_3"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_margin="10dp"
-        android:background="@color/colorAccent"
-        android:text="Practical 9.3" />
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="New User? Register Here!"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/practical9_4"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_margin="10dp"
-        android:background="@color/colorAccent"
-        android:text="Practical 9.4" />
 </LinearLayout>

@@ -5,6 +5,9 @@
       <map>
         <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28804347826086957" />
+        <entry key="app/src/main/res/layout/activity_practical10.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/activity_practical101.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/activity_practical102.xml" value="0.29791666666666666" />
         <entry key="app/src/main/res/layout/activity_practical3.xml" value="0.29791666666666666" />
         <entry key="app/src/main/res/layout/activity_practical31.xml" value="0.2838541666666667" />
         <entry key="app/src/main/res/layout/activity_practical32.xml" value="0.29791666666666666" />
@@ -30,6 +33,7 @@
         <entry key="app/src/main/res/layout/activity_practical72.xml" value="0.1381340579710145" />
         <entry key="app/src/main/res/layout/activity_practical8.xml" value="0.1381340579710145" />
         <entry key="app/src/main/res/layout/activity_practical9.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_practical91.xml" value="0.29791666666666666" />
         <entry key="app/src/main/res/layout/list_item_db.xml" value="0.16346452088824637" />
       </map>
     </option>
