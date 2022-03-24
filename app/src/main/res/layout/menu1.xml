@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <item
+     android:id="@+id/Settings"
+     android:icon="@color/cardview_dark_background"
+     android:title="Settings"
+     app:showAsAction="never"
+     />
+    <item
+        android:id="@+id/Search"
+        android:icon="@color/cardview_dark_background"
+        android:title="Search"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/SendEmail"
+        android:icon="@color/cardview_dark_background"
+        android:title="Email me"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/Feedback"
+        android:icon="@color/cardview_dark_background"
+        android:title="Feedback"
+        app:showAsAction="never"
+        />
+</menu>
